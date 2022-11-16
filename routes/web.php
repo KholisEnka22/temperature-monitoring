@@ -18,5 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');
-Route::get('/report',[DashboardController::class, 'report'])->name('report');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/report', [DashboardController::class, 'report'])->name('report');
+Route::get('/setting', [DashboardController::class, 'setting'])->name('setting');
